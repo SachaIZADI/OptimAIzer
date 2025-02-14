@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "optimaizer"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [
+    { include = "optimaizer" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11 <3.12"
+openai = "^1.60.0"
+python-dotenv = "^1.0.1"
+ortools = "^9.11.4210"
+docstring-parser = "^0.16"
+openpyxl = "^3.1.5"
+langchain = "^0.3.15"
+colorama = "^0.4.6"
+mesop = "^0.14.1"
+pre-commit = "^4.1.0"
+selenium = "^4.28.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
