@@ -3,7 +3,13 @@
 <img src="docs/DALL-E.webp" alt="Alt Text" width="400">
 
 ## Overview
-OptimAIzer is a side project that integrates a Large Language Model (LLM) with a simple Operations Research (OR) model to explore AI-driven pricing optimization. The goal is to create an agentic system that interacts with an optimization model through natural language, enabling dynamic pricing adjustments based on constraints and business inputs.
+OptimAIzer is a side project that integrates a Large Language Model (LLM) with a simple Operations Research (OR) model to explore AI-driven pricing optimization. 
+The goal is to create an agentic system that interacts with an optimization model through natural language. 
+This could typically help non-technical users perform "what-if scenarios", i.e., adjust model recommendations based on specific business constraints and inputs. 
+
+We chose a simple dynamic pricing problem, modeled via a Mixed Integer Program (MIP), to illustate how the system works.
+
+This project was inpired by _[Large Language Models for Supply Chain Optimization](https://arxiv.org/pdf/2307.03875) (Li et al.)_
 
 ## Tech Stack
 - **LLM:** OpenAI 4o-mini with function calling
@@ -12,7 +18,7 @@ OptimAIzer is a side project that integrates a Large Language Model (LLM) with a
 - **Automation:** [Selenium](https://www.selenium.dev/) (used for scripted interactions and demos)
 
 ## Features
-OptimAIzer provides an interactive AI agent that can:
+OptimAIzer provides an interactive AI pricing agent that can:
 
 1. **Retrieve default data**
    - Fetch information on supported products, current inventory levels, market size, and other relevant parameters.
